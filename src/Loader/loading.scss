@@ -1,0 +1,47 @@
+.loading-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    background-color: black;
+    background-image: url("https://d.newsweek.com/en/full/2074659/donald-trump-appears-cpac-florida.jpg?w=1600&h=1600&q=88&f=ac10fdc60d1ec7b996ed7bc132cc0d7f");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    filter: brightness(.5) grayscale(.4);
+}
+.loader-main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%); 
+    width: 100%;
+}
+.loading-image {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    .loader {
+        display: block;
+        color: white !important;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        .loader-spin {
+            color: white !important;
+            width: 50px !important;
+            height: 50px !important;
+        }
+    }
+    .loading-text{
+        font-family: 'Roboto', sans-serif;
+        display: block;
+        padding-top: 1.3rem;
+        width: 100%;
+        font-size: 20px;
+        font-weight: 400;
+    }
+}

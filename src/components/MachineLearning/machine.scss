@@ -1,0 +1,31 @@
+.header-wrapper {
+    .heading-main {
+        position: relative;
+        text-align: center;
+        .heading-image-container {
+            width: 100%;
+            .trump-image {
+                width: 100%;
+                object-fit: cover;
+                max-height: 60vh;
+                filter: grayscale(0.8) brightness(0.5);
+            }
+        }
+        .loading {
+            color: white;
+            font-size: 25px;
+        }
+        .centered-stats {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            transform: translate(-50%, -50%);
+            .header-title {
+                font-size: 60px;
+                color: white;
+                font-weight: 800;
+            }
+        }
+    }
+}

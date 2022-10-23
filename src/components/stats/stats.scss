@@ -1,0 +1,31 @@
+.stats-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    > *{
+        border-radius: 20px;
+        padding: 2% 7% 2% 7%;
+        display: inline-block;
+    }
+    .descriptor {
+        display: block;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    > *span {
+        font-size: 50px;
+        color: white;
+        font-weight: 600;
+    }
+    .positive-wrapper {
+        background-color: darkgreen;
+    }
+    .neutral-wrapper {
+        background-color: gray;
+    }
+    .negative-wrapper {
+        background-color: red;
+    }
+}
