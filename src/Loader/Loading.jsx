@@ -12,7 +12,7 @@ const Loading = (props) => {
         makeTimer()
     }, [])
     function makeTimer(){
-        var array_text = ["Doing analysis...", "Putting data in model...", "Loading...", "Analyzing the data..."];
+        var array_text = ["Doing analysis...", "Putting data in model...", "Loading...", "Checking the data..."];
         var counter = 0;
         var elem = document.getElementById("text-loader");
         setInterval(function(){
@@ -21,7 +21,7 @@ const Loading = (props) => {
             if (counter >= array_text.length) {
               counter = 0;
             }
-        }, 3000);
+        }, 1000);
     }
 
 
