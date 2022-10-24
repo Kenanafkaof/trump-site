@@ -1,5 +1,5 @@
 .header-wrapper {
-    .heading-main {
+    .heading-main-header {
         position: relative;
         text-align: center;
         .heading-image-container {
@@ -7,7 +7,7 @@
             .trump-image {
                 width: 100%;
                 object-fit: cover;
-                max-height: 60vh;
+                max-height: 40vh !important;
                 filter: grayscale(0.8) brightness(0.5);
             }
         }

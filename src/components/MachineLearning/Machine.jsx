@@ -1,12 +1,8 @@
 import React from 'react'
 import MachineData from '../machine/MachineData'
-import {useEffect, useState} from 'react'
 import './machine.scss'
 const Heading = (props) => {
     const machine = props.machine
-    console.log(machine)
-    const data = {"positive": machine.machine_positive, "negative": machine.machine_negative, "neutral": machine.machine_neutral, "confidence": machine.total_confidence}
-    console.log(data)
     const loading = props.loading
   return (
     <div className='header-wrapper'>
@@ -16,7 +12,7 @@ const Heading = (props) => {
             </div>
             <div className="centered-stats">
                 <h1 className='header-title'>Machine Learning</h1>
-                <MachineData machine={data}/>
+                <MachineData machine={machine}/>
             </div>
         </div>
     </div>

@@ -27,8 +27,7 @@ export default function DividedWords(props) {
             <NotesIcon />
           </Avatar>
         </ListItemAvatar>
-        <ListItemText primary="Word" secondary={word.word} />
-        <ListItemText secondary={word.count} />
+        <ListItemText primary={word.word} secondary={word.count} />
       </ListItem>
       <Divider variant="inset" component="li" />
     </>

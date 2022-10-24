@@ -1,4 +1,4 @@
-.word-list-wrapper {
+.header-wrapper {
     .heading-main {
         position: relative;
         text-align: center;
@@ -6,8 +6,8 @@
             width: 100%;
             .trump-image {
                 width: 100%;
+                max-height: 1200px !important;
                 object-fit: cover;
-                max-height: 60vh;
                 filter: grayscale(0.8) brightness(0.5);
             }
         }
@@ -26,15 +26,13 @@
                 color: white;
                 font-weight: 800;
             }
-            .list-index {
-                margin: auto;
-            }
         }
     }
 }
 
 @media only screen and (max-width: 450px) {
-    .word-list-wrapper {
+    .header-wrapper {
+        overflow: auto;
         .heading-main {
             position: relative;
             text-align: center;
@@ -43,7 +41,6 @@
                 .trump-image {
                     width: 100%;
                     object-fit: cover;
-                    height: 50vh;
                     filter: grayscale(0.8) brightness(0.5);
                 }
             }
@@ -58,15 +55,17 @@
                 width: 100%;
                 transform: translate(-50%, -50%);
                 .header-title {
-                    font-size: 40px;
+                    font-size: 35px;
+                    padding-bottom: 1rem;
                     color: white;
                     font-weight: 800;
                 }
-                .list-index {
+                .articles-container {
                     margin: auto;
+                    overflow: auto;
                 }
             }
         }
     }
     
-  }
+}

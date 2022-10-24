@@ -2,13 +2,16 @@ import React from 'react'
 import Heading from '../components/heading/Heading'
 import Words from '../components/words/Words'
 import Machine from '../components/MachineLearning/Machine'
+import Search from '../components/Search/Search'
 import {useEffect, useState} from 'react'
 import Loading from '../Loader/Loading';
 import WordList from '../components/WordList/WordList'
+import Articles from '../components/Articles/Articles'
 const Home = () => {
   const [loading, setLoading] = useState(true)
   const [news, setNews] = useState([])
   const [words, setWords] = useState([])
+  const [articles, setArticles] = useState([])
 
   useEffect(() => {
     setLoading(true)
@@ -22,6 +25,7 @@ const Home = () => {
 
         setNews(data['statistics'])
         setWords(data['words'])
+        setArticles(data['statistics']['articles'])
         setLoading(false)
     })
   }, [])
@@ -43,6 +47,8 @@ const Home = () => {
           <Machine machine={news}/>
           <Words words={words}/>
           <WordList words={words}/>
+          <Articles articles={articles}/>
+          <Search />
         </>
         }
         

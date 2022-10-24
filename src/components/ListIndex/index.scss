@@ -1,3 +1,11 @@
 .list-index {
     overflow: auto !important;
 }
+
+
+@media only screen and (max-width: 450px) {
+    .list-index {
+        width: 90% !important;
+    }
+    
+}

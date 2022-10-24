@@ -7,3 +7,12 @@
     width: 800px !important;
     font-size: 30px !important;
 }
+
+@media only screen and (max-width: 450px) {
+    .chart-data {
+        font-family: 'Montserrat', sans-serif !important;
+        width: 400px !important;
+        font-size: 30px !important;
+    }
+    
+}

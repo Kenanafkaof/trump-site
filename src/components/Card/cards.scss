@@ -1,0 +1,35 @@
+.card-wrapper {
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    padding-bottom: 2rem;
+    .card-main {
+        margin: auto;
+        display: block;
+        .open-card {
+            width: 100%;
+            position: relative;
+            right: 0px;
+        }
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .card-wrapper {
+        display: grid;
+        margin: auto;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1rem;
+        padding-bottom: 2rem;
+        .card-main {
+            margin: auto;
+            display: block;
+            .open-card {
+                width: 100%;
+                position: relative;
+                right: 0px;
+            }
+        }
+    }
+}
