@@ -21,7 +21,7 @@ const Loading = (props) => {
             if (counter >= array_text.length) {
               counter = 0;
             }
-        }, 1000);
+        }, 1500);
     }
 
 

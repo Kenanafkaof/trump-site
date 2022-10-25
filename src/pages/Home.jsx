@@ -42,12 +42,13 @@ const Home = () => {
           <>
             <div className="loading-wrapper">
             </div>
-            <Loading />  
+             <Loading />  
           </>
           }
 
         {loading === false &&
         <>
+        <Fade>
           <Heading news={news} loading={loading}/>
           <Fade>
             <Machine machine={news}/>
@@ -64,6 +65,7 @@ const Home = () => {
           <Fade>
             <Search />
           </Fade>
+        </Fade>
         </>
         }
         
