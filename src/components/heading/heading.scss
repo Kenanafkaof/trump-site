@@ -29,6 +29,43 @@
         }
     }
 }
+@media only screen and (max-width: 1650px) {
+    .header-wrapper {
+        .heading-main {
+            position: relative;
+            text-align: center;
+            height: 800px;
+            .heading-image-container {
+                width: 100%;
+                .trump-image {
+                    width: 100%;
+                    object-fit: cover;
+                    height: 800px;
+                    filter: grayscale(0.8) brightness(0.5);
+                }
+            }
+            .loading {
+                color: white;
+                font-size: 25px;
+            }
+            .centered-stats {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 100%;
+                transform: translate(-50%, -50%);
+                .header-title {
+                    margin: auto;
+                    width: 95%;
+                    font-size: 35px !important;
+                    color: white;
+                    font-weight: 800;
+                }
+            }
+        }
+    }
+
+}
 
 @media only screen and (max-width: 450px) { 
     .header-wrapper {

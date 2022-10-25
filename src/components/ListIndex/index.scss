@@ -2,7 +2,12 @@
     overflow: auto !important;
 }
 
-
+@media only screen and (max-width: 1650px) {
+    .list-index {
+        height: 60% !important;
+    }
+    
+}
 @media only screen and (max-width: 450px) {
     .list-index {
         width: 90% !important;

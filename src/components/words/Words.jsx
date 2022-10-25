@@ -6,7 +6,7 @@ const Words = (props) => {
   return (
     <div className='words-wrapper'>
         <div className="words-image">
-            <img src="https://media.newyorker.com/photos/5fc812d465b1e636a7ab4baa/master/w_2560%2Cc_limit/Cassidy-TrumpGrift.jpg" alt="Trump Silly" className="words-image-main" />
+            <img src="https://i0.wp.com/news.northeastern.edu/wp-content/uploads/2022/07/donald_trump_1400.jpg?fit=1400%2C933&ssl=1" alt="Trump Silly" className="words-image-main" />
         </div>
         <div className="centered-words">
             <h1 className='header-title'>Most Common Words</h1>
