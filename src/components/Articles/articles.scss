@@ -1,7 +1,8 @@
 .header-wrapper {
-    .heading-main {
+    .heading-main-articles {
         position: relative;
         text-align: center;
+        overflow: scroll;
         .heading-image-container {
             width: 100%;
             .trump-image {
@@ -25,6 +26,57 @@
                 font-size: 60px;
                 color: white;
                 font-weight: 800;
+            }
+            .articles-container {
+                padding-top: 2rem;
+                margin: auto;
+                overflow: scroll !important;
+            }
+        }
+        .centered {
+            overflow: scroll;
+        }
+    }
+}
+
+@media only screen and (max-width: 1550px) {
+    .header-wrapper {
+        overflow: hidden;
+        .heading-main-articles {
+            position: relative;
+            text-align: center;
+            height: 800px;
+            overflow: hidden;
+            .heading-image-container {
+                width: 100%;
+                .trump-image {
+                    width: 100%;
+                    object-fit: cover;
+                    max-height: 800px;
+                    filter: grayscale(0.8) brightness(0.5);
+                }
+            }
+            .loading {
+                color: white;
+                font-size: 25px;
+            }
+            .centered-stats {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 100%;
+                transform: translate(-50%, -50%);
+                .header-title {
+                    font-size: 35px;
+                    padding-bottom: 1rem;
+                    color: white;
+                    font-weight: 800;
+                }
+                .articles-container {
+                    padding-top: 2rem;
+                    margin: auto;
+                    overflow: auto;
+                }
             }
         }
     }
@@ -61,6 +113,7 @@
                     font-weight: 800;
                 }
                 .articles-container {
+                    padding-top: 2rem;
                     margin: auto;
                     overflow: auto;
                 }

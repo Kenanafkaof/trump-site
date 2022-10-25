@@ -2,6 +2,7 @@ import React from 'react';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import { Line } from 'react-chartjs-2';
 import { Chart, registerables } from 'chart.js';
+import Fade from 'react-reveal/Fade';
 import './chart.scss'
 
 Chart.register(...registerables);
@@ -62,15 +63,18 @@ const ChartData = (props) => {
       }
       };
     return (
-      <div className='chartMain'>
-        <Line
-          data={state}
-          options={options}
-          height="300px"
-          width="500px"
-          className='chart-data'
-        />
-      </div>
+      <Fade>
+        <div className='chartMain'>
+          <Line
+            data={state}
+            options={options}
+            height="300px"
+            width="500px"
+            className='chart-data'
+          />
+        </div>
+      </Fade>
+      
     );
 }
 export default ChartData

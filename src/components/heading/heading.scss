@@ -1,7 +1,9 @@
 .header-wrapper {
+    overflow: hidden;
     .heading-main {
         position: relative;
         text-align: center;
+        overflow: hidden;
         .heading-image-container {
             width: 100%;
             .trump-image {
@@ -41,6 +43,7 @@
                     width: 100%;
                     object-fit: cover;
                     height: 800px;
+                    max-height: 800px;
                     filter: grayscale(0.8) brightness(0.5);
                 }
             }
@@ -77,7 +80,8 @@
                 .trump-image {
                     width: 100%;
                     object-fit: cover;
-                    height: 40vh;
+                    height: 170vh;
+                    max-height: 120vh;
                     filter: grayscale(0.8) brightness(0.5);
                 }
             }

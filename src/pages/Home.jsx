@@ -7,6 +7,11 @@ import {useEffect, useState} from 'react'
 import Loading from '../Loader/Loading';
 import WordList from '../components/WordList/WordList'
 import Articles from '../components/Articles/Articles'
+
+import Zoom from 'react-reveal/Zoom';
+import Fade from 'react-reveal/Fade';
+import Slide from 'react-reveal/Slide';
+
 const Home = () => {
   const [loading, setLoading] = useState(true)
   const [news, setNews] = useState([])
@@ -44,11 +49,21 @@ const Home = () => {
         {loading === false &&
         <>
           <Heading news={news} loading={loading}/>
-          <Machine machine={news}/>
-          <Words words={words}/>
-          <WordList words={words}/>
-          <Articles articles={articles}/>
-          <Search />
+          <Fade>
+            <Machine machine={news}/>
+          </Fade>
+          <Slide left>
+            <Words words={words}/>
+          </Slide>
+          <Zoom right>
+            <WordList words={words}/>
+          </Zoom>
+          <Slide right>
+            <Articles articles={articles}/>
+          </Slide>
+          <Fade>
+            <Search />
+          </Fade>
         </>
         }
         

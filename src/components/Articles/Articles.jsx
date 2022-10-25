@@ -13,7 +13,7 @@ const Articles = (props) => {
     }, [])
   return (
     <div className='header-wrapper'>
-        <div className="heading-main">
+        <div className="heading-main-articles">
             {desktop === true &&
             <>
                 <div className="heading-image-container">

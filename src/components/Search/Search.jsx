@@ -6,6 +6,7 @@ import CircularProgress from '@mui/material/CircularProgress';
 import {useEffect, useState} from 'react'
 import MachineData from '../machine/MachineData';
 import ChartData from '../Chart/ChartData'
+import Reveal from 'react-reveal/Reveal';
 
 const Search = () => {
     const [loading, setLoading] = useState(false)
@@ -51,6 +52,7 @@ const Search = () => {
                 }
                 {loading === false &&
                 <>
+                <Reveal>
                     {news.length != 0 &&
                         <div className="search-results">
                             <MachineData machine={news}/>
@@ -59,6 +61,7 @@ const Search = () => {
                             </div>
                         </div>
                     }
+                </Reveal>
                 </>
                 }
 
