@@ -15,7 +15,7 @@ const Home = () => {
 
   useEffect(() => {
     setLoading(true)
-    fetch(`http://127.0.0.1:5000/trump`)
+    fetch(`https://trump-backend.herokuapp.com/trump`)
     .then(async response => {
         const data = await response.json();
 

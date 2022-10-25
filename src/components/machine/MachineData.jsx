@@ -14,8 +14,8 @@ const MachineData = (props) => {
             <span className="negative">{data.machine_negative}</span>
         </div>
         <div className="neutral-wrapper">
-            <span className="descriptor">Confidence</span>
-            <span className="neutral">{data.total_confidence}</span>
+            <span className="descriptor">Neutral</span>
+            <span className="neutral">{data.machine_neutral}</span>
         </div>
     </div>
   )

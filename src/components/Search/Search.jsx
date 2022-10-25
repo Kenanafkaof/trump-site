@@ -15,7 +15,7 @@ const Search = () => {
     function getSearch(query) {
         setLoading(true)
         const search = query
-        fetch(`http://127.0.0.1:5000/deepsearch?q=${search.toLowerCase()}`)
+        fetch(`https://trump-backend.herokuapp.com/deepsearch?q=${search.toLowerCase()}`)
           .then(async response => {
               const data = await response.json();
   
