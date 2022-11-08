@@ -30,7 +30,7 @@
             .articles-container {
                 padding-top: 2rem;
                 margin: auto;
-                overflow: scroll !important;
+                overflow-y: auto !important;
             }
         }
         .centered {
