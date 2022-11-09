@@ -1,0 +1,89 @@
+.selection {
+    height: 100vh;
+    width: 100%;
+    background-color: transparent;
+}
+
+.selection-items {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) #2C3652, rgba(0,212,255,1) 0%, rgba(15,194,191,1) 49%);
+}
+
+.welcome-header {
+    color: white;
+}
+
+
+.curved-background__curved {
+    display: block;
+    background-image: linear-gradient(to top, #1c1dd8, #001faa, #001a7b, #00124e, #020024);
+    border-bottom-left-radius: 0% 40%;
+    border-bottom-right-radius: 0% 40%;
+    height: 40%;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+}
+
+.selectionWrapper {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    position: relative;
+}
+
+.selection-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+.pagebutton {
+    width: 15vmax;
+    height: 7rem;
+    padding: 15px 15px 15px 15px;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    background-image: linear-gradient(to left top, #1c1dd8, #001faa, #001a7b, #00124e, #020024);
+    border: 1px solid white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    cursor: pointer;
+    transition: ease-in-out .3s all;
+    &:hover {
+        transform: scale(1.1);
+        box-shadow: rgba(46, 175, 240, 0.4) -5px 5px, 
+        rgba(46, 114, 240, 0.3) -10px 10px, 
+        rgba(46, 85, 240, 0.2) -15px 15px, 
+        rgba(46, 59, 240, 0.1) -20px 20px, 
+        rgba(46, 49, 240, 0.05) -25px 25px;
+    }
+}
+
+.page-icon {
+    font-size: 2rem !important;
+}
+
+.machine-learning {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}

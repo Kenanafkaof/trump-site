@@ -1,0 +1,108 @@
+.header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: auto;
+    justify-content: center;
+    color:#1DA1F2;
+    font-weight: 600;
+    .tweet-header-icon {
+        font-size: 50px !important;
+    }
+}
+
+.tweet-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 60%;
+    margin: auto;
+    padding: 5px;
+    border-radius: 15px;
+    margin-top: 1rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: ease-in-out .2s;
+    &:hover {
+        transform: scale(1.02);
+        background-color: rgba(0, 0, 0, 0.06);
+    }
+}
+
+.tweet-main {
+    width: 95%;
+    margin: auto;
+}
+
+.active-like {
+    color: #1DA1F2;
+}
+.active-dislike {
+    color: red;
+}
+
+.profile-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+    gap: 1rem;
+    .image {
+        border-radius: 50%;
+        
+    }
+    .profile-image {
+        width: 80px;
+        height: 70px;
+        border-radius: 20%;
+        object-fit: cover;
+    }
+    .profile-details {
+        display: flex;
+        flex-direction: column;
+        margin-top: -1rem;
+        .username {
+            color: darkgray;
+            margin-top: -.5rem;
+        }
+    }
+    padding-bottom: 1rem;
+}
+
+.tweet-content {
+    text-align: left;
+}
+
+.reactions {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    vertical-align: middle;
+    color: darkgray;
+}
+.date {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-basis: 50%;
+}
+.right {
+    display: flex;
+    gap: 2rem;
+    justify-content: right;
+    align-items: right;
+    flex-basis: 50%;
+}
+.count {
+    cursor: pointer;
+    display: block;
+    transition: ease-in-out .2s;
+    .count-icon {
+        &:hover {
+            color: #1DA1F2;
+        }
+    }
+    
+}
