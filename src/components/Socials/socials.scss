@@ -1,0 +1,58 @@
+
+
+.pagination {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    font-weight: 600;
+    .page {
+        padding: 10px 15px 15px 15px;
+        transition: ease-in-out .2s;
+        &:hover {
+            background-color: rgb(0, 0, 0, 0.02);
+            border-radius: 10px;
+        }
+    }
+    .twitter-button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: .5rem;
+    }
+    .tiktok-button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: .5rem;
+    }
+    .active {
+        color: #1DA1F2;
+    }
+    .tiktok-active {
+        color: #ff0050;
+    }
+}
+
+
+.header-tiktok {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: auto;
+    justify-content: center;
+    color: #ff0050;
+    font-weight: 600;
+    .tweet-header-icon {
+        font-size: 50px !important;
+    }
+}
+
+.tweets {
+    background-color: transparent;
+}
