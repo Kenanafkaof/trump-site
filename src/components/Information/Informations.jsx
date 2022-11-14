@@ -3,6 +3,7 @@ import pewdata from '../../assets/pewdata.jpg'
 import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
 import difference from '../../assets/difference.jpg'
 import './information.scss'
+import Data from './Data/Data';
 
 const Informations = () => {
   return (
@@ -16,6 +17,7 @@ const Informations = () => {
             </div>
         </div>
         <main>
+            <Data />
             <div className="quoteBlock">
                 <div className="quoteText">
                     <FormatQuoteIcon class="start-quote" />
