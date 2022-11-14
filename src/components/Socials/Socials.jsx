@@ -12,13 +12,13 @@ const Socials = () => {
   const [media, setMedia] = useState('twitter')
   const [tiktok, setTiktok] = useState(0)
   const urls = [{
-    "url": "https://www.tiktok.com/@ezra_martin097/video/6891896411818937605"
+    "url": "https://www.tiktok.com/embed/6891896411818937605"
   },
   {
-    "url": "https://www.tiktok.com/@nbata1776/video/7026484131559263494?is_copy_url=1&is_from_webapp=v1", 
+    "url": "https://www.tiktok.com/embed/7026484131559263494", 
   }, 
   {
-    "url": "https://www.tiktok.com/@republicancontenthouse/video/6917405657176083717?is_copy_url=1&is_from_webapp=v1&lang=en&q=trump%202020&t=1668018298993"
+    "url": "https://www.tiktok.com/embed/6917405657176083717"
   }
   ]
   const scandals = [{
@@ -149,6 +149,19 @@ const Socials = () => {
     setTiktok(tiktok+1)
     console.log(tiktok)
   }
+  const iframe_container = {
+    left: 0,
+              width: "100%",
+              height: 500,
+              position: "relative"
+            }
+
+  const iframe ={top: 0,
+  left: 0,
+  width: "100%",
+  height: "100%",
+  position: "absolute",
+  border: 0}
   return (
     <div className='socialsWrapper'>
         {media === "twitter" &&
@@ -162,10 +175,18 @@ const Socials = () => {
               <VideocamIcon className='tweet-header-icon'/> <h1 className="tweets-header">Tik Tok Polarization</h1>
           </div>
           {urls.map((tiktok, i) =>
-            <div className="tiktoks" key={i}>
-              <TikTok url={tiktok.url} onLoad={() => checkLoad()} className='fyp'/>
+
+            <div className={iframe_container}>
+              <iframe
+                  id="tiktok-frame"
+                  src={tiktok.url}
+                  className={iframe}
+                  allowfullscreen
+                  scrolling="no"
+                  allow="encrypted-media;"
+                ></iframe>
             </div>
-          )}
+            )}
         </>
         }
         {media === "scandals" &&
