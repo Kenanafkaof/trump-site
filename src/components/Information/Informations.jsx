@@ -33,6 +33,24 @@ const Informations = () => {
                     <FormatQuoteIcon class="end-quote"/>
                 </div>
             </div>
+            <div className="quoteBlock">
+                <div className="quoteText">
+                    <FormatQuoteIcon class="start-quote" />
+                    <p className="quote">
+                    <mark className='mark-highlight'>But in reality, the TikTok algorithm is similar or arguably worse in creating an echo chamber of ideas, because there are no journalistic standards or accountability, unlike traditional news media</mark>
+                    </p>
+                    <FormatQuoteIcon class="end-quote"/>
+                </div>
+            </div>
+            <div className="quoteBlock">
+                <div className="quoteText">
+                    <FormatQuoteIcon class="start-quote" />
+                    <p className="quote">
+                    <mark className='mark-highlight'>TikTok trolled on Trump's effort to rally after they humiliated him by requesting more than 1 million tickets for the event, and only 6,000 people showed up. For the leftist political TikTok, this was a rather satisfying victory</mark>
+                    </p>
+                    <FormatQuoteIcon class="end-quote"/>
+                </div>
+            </div>
         </main>
     </div>
   )
