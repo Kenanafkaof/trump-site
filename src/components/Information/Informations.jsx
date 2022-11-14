@@ -9,18 +9,10 @@ const Informations = () => {
     <div className='informationWrapper'>
         <div className="main-header">
             <div className="header-data">
-                <img src={pewdata} alt="Pew Data" className='pew-research' />
+                <img src="https://www.fairobserver.com/wp-content/uploads/2020/03/Social-media-4.jpg" alt="Pew Data" className='pew-research' />
             </div>
             <div className="header-details">
-                <h1 className='pew-header-text'>More Polarization</h1>
-            </div>
-        </div>
-        <div className="main-header">
-            <div className="header-data">
-                <img src={difference} alt="Pew Data" className='pew-research' />
-            </div>
-            <div className="header-details">
-                <h1 className='pew-header-text'>More Disagreements</h1>
+                <h1 className='pew-header-text'>Social Media & Polarization</h1>
             </div>
         </div>
         <main>
