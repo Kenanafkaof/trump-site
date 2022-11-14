@@ -1,0 +1,74 @@
+.main-header {
+    position: relative;
+    .header-data {
+        width: 100%;
+        position: relative;
+        .pew-research {
+            width: 95%;
+            max-height: 1200px;
+            object-fit: cover;
+            filter: grayscale(100%);
+        }
+    }
+    .header-details {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 35px;
+        width: 100%;
+    }
+}
+
+.main-header:hover .pew-research {
+    transition: ease-in-out .3s;
+    filter: grayscale(0%);
+}
+
+.main-header:hover .header-details {
+    animation: fadeOut 1s;
+    opacity: 0%;
+    
+}
+
+@keyframes fadeOut {
+    100% { opacity: 0; }
+    0% { opacity: 1; }
+  }
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+.quoteText {
+    font-size: 30px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.quote {
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 600;
+    
+}
+.quote:hover .mark-highlight {
+    transition: ease-in-out .3s;
+    opacity: 100%;
+    background-color: yellow;
+}
+.mark-highlight {
+    background-color: white;
+}
+
+
+.start-quote {
+    font-size: 30px !important;
+    height: 80px !important;
+    -webkit-transform:rotateY(180deg);
+}
+
+.end-quote {
+    height: 80px !important;
+    font-size: 30px !important;
+}

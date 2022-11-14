@@ -10,6 +10,7 @@ import {
   Outlet
 } from "react-router-dom";
 import Scandalslisted from './pages/Scandalslisted';
+import Information from './pages/Information';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route exact path="/" element={<Select /> }/>
           <Route exact path="/analysis" element={<Home /> }/>
           <Route exact path="/scandals" element={<Scandalslisted /> }/>
+          <Route exact path="/information" element={<Information /> }/>
         </Routes>
       </BrowserRouter>
     </div>

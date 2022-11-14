@@ -6,7 +6,6 @@ const Scandalslisted = () => {
   return (
     <div className='scandals-page'>
         <Socials />
-        <Scandals />
     </div>
   )
 }
