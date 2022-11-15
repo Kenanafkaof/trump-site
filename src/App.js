@@ -3,7 +3,7 @@ import './App.css';
 import Home from './pages/Home';
 import Select from './pages/Select';
 import {
-  HashRouter,
+  BrowserRouter,
   Routes,
   Route,
   Link,
@@ -15,14 +15,14 @@ import Information from './pages/Information';
 function App() {
   return (
     <div className="App">
-      <HashRouter>
+      <BrowserRouter>
         <Routes>
           <Route path="/" element={<Select /> }/>
           <Route path="/analysis" element={<Home /> }/>
           <Route path="/scandals" element={<Scandalslisted /> }/>
           <Route path="/information" element={<Information /> }/>
         </Routes>
-      </HashRouter>
+      </BrowserRouter>
     </div>
   );
 }
