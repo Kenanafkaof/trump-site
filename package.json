@@ -1,7 +1,6 @@
 {
   "name": "trump-site",
   "version": "0.1.0",
-  "homepage": "http://kenanafkaof.github.io/trump-site",
   "private": true,
   "engines": {
     "node": "17.4.0"
