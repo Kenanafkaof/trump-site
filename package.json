@@ -2,6 +2,7 @@
   "name": "trump-site",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://kenanafkaof.github.io/trump-site/#",
   "engines": {
     "node": "17.4.0"
   },
@@ -27,7 +28,9 @@
   },
   "scripts": {
     "start": "serve -s build",
-    "build": "cd client/ && yarn install && yarn build",
+    "predeploy": "npm run build",
+    "build": "react-scripts build",
+    "deploy": "gh-pages -d build",
     "dev": "react-scripts start",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -54,3 +57,4 @@
     "gh-pages": "^4.0.0"
   }
 }
+
