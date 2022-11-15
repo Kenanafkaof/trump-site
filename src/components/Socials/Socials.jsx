@@ -170,13 +170,13 @@ const Socials = () => {
   return (
     <div className='socialsWrapper'>
         {media === "twitter" &&
-          <div className="tweets">
+          <div className="tweets" onLoad={window.scrollTo({top: 0})}>
             <Tweet />
           </div>
         }
         {media === "tiktok" &&
         <>
-          <div className="header-tiktok">
+          <div className="header-tiktok" onLoad={window.scrollTo({top: 0})}>
               <VideocamIcon className='tweet-header-icon'/> <h1 className="tweets-header">Tik Tok Polarization</h1>
           </div>
           {urls.map((tiktok, i) =>
@@ -202,7 +202,7 @@ const Socials = () => {
 		}
         {media === "scandals" &&
         <>
-          <div className="header-scandals">
+          <div className="header-scandals" onLoad={window.scrollTo({top: 0})}>
               <NewspaperIcon className='tweet-header-icon'/> <h1 className="tweets-header">2020 Scandal Analysis</h1>
           </div>
           <Scandals data={scandals}/>
