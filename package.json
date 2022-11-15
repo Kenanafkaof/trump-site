@@ -2,7 +2,7 @@
   "name": "trump-site",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://kenanafkaof.github.io/trump-site/#",
+  "homepage": "https://kenanafkaof.github.io/trump-site",
   "engines": {
     "node": "17.4.0"
   },
