@@ -1,7 +1,7 @@
 import React from 'react'
-import ThumbUpIcon from '@mui/icons-material/ThumbUp';
-import ThumbDownAltIcon from '@mui/icons-material/ThumbDownAlt';
+
 import TwitterIcon from '@mui/icons-material/Twitter';
+import Like from '../Like/Like.jsx'
 import './tweet.scss'
 const Tweet = () => {
     const tweets = [{
@@ -49,12 +49,8 @@ const Tweet = () => {
                             {tweet.date}
                         </div>
                         <div className="right">
-                            <div className="like-count count" onClick={e => e.target.classList.toggle('active-like')}>
-                                <ThumbUpIcon className="count-icon"/> <span className="count">380k</span>
-                            </div>
-                            <div className="dislike-count count" onClick={e => e.target.classList.toggle('active-dislike')}>
-                                <ThumbDownAltIcon className="count-icon"/> <span className="count">210k</span>
-                            </div>
+                            <Like />
+                            
                         </div>
                         
                     </div>

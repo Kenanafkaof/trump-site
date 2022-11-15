@@ -1,16 +1,18 @@
 import React from 'react'
 import './socials.scss'
-import { TikTok, } from "react-tiktok";
 import Tweet from './Tweet/Tweet';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import VideocamIcon from '@mui/icons-material/Videocam';
 import NewspaperIcon from '@mui/icons-material/Newspaper';
 import MenuIcon from '@mui/icons-material/Menu';
+import Box from '@mui/material/Box';
+import CircularProgress from '@mui/material/CircularProgress';
 import {useEffect, useState} from 'react'
 import Scandals from '../Scandals/Scandals';
 const Socials = () => {
   const [media, setMedia] = useState('twitter')
-  const [tiktok, setTiktok] = useState(0)
+  const [tiktok, setTiktok] = useState([])
+  const [loading, setLoading] = useState(false)
   const urls = [{
     "url": "https://www.tiktok.com/embed/6891896411818937605"
   },
@@ -144,10 +146,13 @@ const Socials = () => {
 		"description": "Lets just say he makes Gary Busey look like Dr. Fauci, Kimmel said of the pro-Trump actor after the president retweeted five of his posts on Tuesday."
 	}
   ] 
-  
   function checkLoad() {
-    setTiktok(tiktok+1)
-    console.log(tiktok)
+	setLoading(true)
+    setTiktok(tiktok => "loaded")
+	if (tiktok.length >= urls.length-1) {
+		console.log(tiktok)
+		setLoading(false)
+	}
   }
   const iframe_container = {
     left: 0,
@@ -180,6 +185,7 @@ const Socials = () => {
               <iframe
                   id="tiktok-frame"
                   src={tiktok.url}
+				  onLoad={event => checkLoad()}
                   className={iframe}
                   allowfullscreen
                   scrolling="no"
@@ -189,6 +195,11 @@ const Socials = () => {
             )}
         </>
         }
+		{loading == true &&
+			<Box sx={{ display: 'flex' }}>
+				<CircularProgress />
+			</Box>
+		}
         {media === "scandals" &&
         <>
           <div className="header-scandals">

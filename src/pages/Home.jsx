@@ -11,6 +11,7 @@ import Articles from '../components/Articles/Articles'
 import Zoom from 'react-reveal/Zoom';
 import Fade from 'react-reveal/Fade';
 import Slide from 'react-reveal/Slide';
+import Return from '../components/Return/Return'
 
 const Home = () => {
   const [loading, setLoading] = useState(true)
@@ -66,6 +67,7 @@ const Home = () => {
             <Search />
           </Fade>
         </Fade>
+        <Return />
         </>
         }
         

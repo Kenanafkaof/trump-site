@@ -1,0 +1,34 @@
+.active-like {
+    color: #1DA1F2;
+}
+.active-dislike {
+    color: red;
+}
+
+.count {
+    cursor: pointer;
+    display: block;
+    transition: ease-in-out .2s;
+    .count-icon {
+        &:hover {
+            color: #1DA1F2;
+        }
+    }
+    
+}
+
+.wrapper-like {
+    cursor: pointer;
+    transition: ease-in-out .2s;
+    &:hover {
+            color: #1DA1F2;
+        }
+}
+
+.wrapper-dislike {
+    cursor: pointer;
+    transition: ease-in-out .2s;
+    &:hover {
+            color: red;
+        }
+}

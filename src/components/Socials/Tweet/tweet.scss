@@ -32,13 +32,6 @@
     margin: auto;
 }
 
-.active-like {
-    color: #1DA1F2;
-}
-.active-dislike {
-    color: red;
-}
-
 .profile-section {
     display: flex;
     flex-direction: row;
@@ -93,15 +86,4 @@
     justify-content: right;
     align-items: right;
     flex-basis: 50%;
-}
-.count {
-    cursor: pointer;
-    display: block;
-    transition: ease-in-out .2s;
-    .count-icon {
-        &:hover {
-            color: #1DA1F2;
-        }
-    }
-    
 }
