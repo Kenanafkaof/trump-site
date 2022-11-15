@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/trump-site/static/css/main.c4a83db3.css",
-    "main.js": "/trump-site/static/js/main.c27eed5b.js",
+    "main.js": "/trump-site/static/js/main.a5834412.js",
     "static/js/787.8af10b07.chunk.js": "/trump-site/static/js/787.8af10b07.chunk.js",
     "static/media/pewdata.jpg": "/trump-site/static/media/pewdata.375874c11a9a3110c432.jpg",
     "static/media/difference.jpg": "/trump-site/static/media/difference.97efa5fac48ad0fa0f35.jpg",
@@ -9,11 +9,11 @@
     "static/media/logo.svg": "/trump-site/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/trump-site/index.html",
     "main.c4a83db3.css.map": "/trump-site/static/css/main.c4a83db3.css.map",
-    "main.c27eed5b.js.map": "/trump-site/static/js/main.c27eed5b.js.map",
+    "main.a5834412.js.map": "/trump-site/static/js/main.a5834412.js.map",
     "787.8af10b07.chunk.js.map": "/trump-site/static/js/787.8af10b07.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c4a83db3.css",
-    "static/js/main.c27eed5b.js"
+    "static/js/main.a5834412.js"
   ]
 }
