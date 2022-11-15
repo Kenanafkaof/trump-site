@@ -4,7 +4,8 @@
   "private": true,
   "homepage": "https://kenanafkaof.github.io/trump-site",
   "engines": {
-    "node": "17.4.0"
+    "node": "14.17.0",
+    "npm": "6.14.13"
   },
   "dependencies": {
     "@emotion/react": "^11.10.4",
